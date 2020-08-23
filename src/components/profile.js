@@ -1,8 +1,11 @@
 
 import React from 'react';
 import {Link} from 'gatsby';
+import {useIdentityContext} from 'react-netlify-identity'
 
 const Profile = () => {
+  const identity = useIdentityContext();
+  console.log(identity)
   return (
     <div className="dashboard-header">
       <nav>
